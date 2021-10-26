@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+.logo {
+  flex: 1;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  flex: 1;
+}
+nav {
+  flex: 3;
+  text-align: right;
+  margin-top: 30px;
+}
+nav ul {
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+nav ul li:hover {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid orange;
+}
+
+/* Style the header */
+header {
+  background: url("https://images.unsplash.com/photo-1634020763161-7ff5a5560f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNTEwNDEzNQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080")
+    no-repeat fixed center center/cover;
+
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100vh;
+}
+.main_nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+/* Style the list inside the menu */
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 700px;
+  margin: auto;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  display: flex;
+  height: 100px;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  width: 100%;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+button:hover {
+  background-color: darkorange;
+  color: #333;
+}
+
+.footerlink {
+  flex: 1;
+}
+
+.footerlink ul {
+  padding: 0;
+}
+
+.footerlink ul li {
+  display: block;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.footerlink a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerlink a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 20px;
+}
+footer input {
+  margin-bottom: 20px;
+  padding: 10px;
+}
