@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/aefa1b2392.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="stylesheet" href="gallery.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Portfolio</title>
   </head>
 
   <body>
@@ -26,23 +27,16 @@
             <img src="/images/logo.png" alt="some image" />
           </div>
           <nav>
-            <ul class="topnav" id="mobTopNav">
+            <button id="Burger">
+              <span class="material-icons"> mobile menu </span>
+            </button>
+            <ul>
               <li><a href="./index.html#projects">Projects</a></li>
               <li><a href="./index.html#about">About Me </a></li>
               <li><a href="./index.html#skills">Skills</a></li>
-              <li><a href="gallery.html" target="_blank">Gallery </a></li>
+              <li><a href="./gallery.html" target="_blank">Gallery </a></li>
 
               <li><a href="./index.html#footerlinks">Contact Me</a></li>
-
-              <li>
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="topnavfunction()"
-                >
-                  <i class="fa fa-bars"></i>
-                </a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -93,10 +87,10 @@
     <footer>
       <div id="footerlinks">
         <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About Me </a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#gallery"> Gallery</a></li>
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#about">About Me </a></li>
+          <li><a href="./index.html#skills">Skills</a></li>
+          <li><a href="./gallery.html" target="_blank">Gallery </a></li>
         </ul>
       </div>
       <form>

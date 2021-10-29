@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/aefa1b2392.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
   </head>
-
   <body>
     <header>
       <div class="main_nav">
@@ -26,23 +26,16 @@
             <img src="/images/logo.png" alt="some image" />
           </div>
           <nav>
-            <ul class="topnav" id="mobTopNav">
+            <button id="Burger">
+              <span class="material-icons"> mobile menu </span>
+            </button>
+            <ul>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#about">About Me </a></li>
               <li><a href="#skills">Skills</a></li>
-              <li><a href="gallery.html" target="_blank">Gallery</a> </a></li>
+              <li><a href="gallery.html" target="_blank">Gallery </a></li>
 
               <li><a href="#footerlinks">Contact Me</a></li>
-
-              <li>
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="topnavfunction()"
-                >
-                  <i class="fa fa-bars"></i>
-                </a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -100,23 +93,27 @@
 
       <section id="skills">
         <div class="container">
-          <h3>My skills</h3>
-          <div class="content">
-            <div class="box">
-              <h5>HTML</h5>
-              <span class="material-icons"></span>
-              <progress id="file" value="40" max="100"></progress>
+          <h3>Skills</h3>
+          <div class="skill-items">
+            <div class="skill">
+              <span class="material-icons"> language </span>
+              <p>Node</p>
+              <progress value="30" max="100">65%</progress>
             </div>
-            <div class="box">
-              <h5>CSS</h5>
-              <span class="material-icons"> </span>
-              <progress id="file" value="50" max="100"></progress>
+            <div class="skill">
+              <span class="material-icons"> data_saver </span>
+              <p>Git</p>
+              <progress value="45" max="100">70%</progress>
             </div>
-
-            <div class="box">
-              <h5>JavaScript</h5>
-              <span class="material-icons"></span>
-              <progress id="file" value="32" max="100"></progress>
+            <div class="skill">
+              <span class="material-icons"> code </span>
+              <p>Java</p>
+              <progress value="40" max="100">80%</progress>
+            </div>
+            <div class="skill">
+              <span class="material-icons"> developer_mode </span>
+              <p>JS</p>
+              <progress value="50" max="100">80%</progress>
             </div>
           </div>
         </div>
@@ -128,7 +125,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About Me </a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="gallery.html" target="_blank">Gallery</a> </a></li>
+          <li><a href="gallery.html" target="_blank">Gallery </a></li>
         </ul>
       </div>
 
