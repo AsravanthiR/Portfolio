@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/aefa1b2392.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="main_nav">
+        <div class="container">
+          <div class="logo">
+            <img src="/images/logo.png" alt="some image" />
+          </div>
+          <nav>
+            <ul class="topnav" id="mobTopNav">
+              <li><a href="./index.html#projects">Projects</a></li>
+              <li><a href="./index.html#about">About Me </a></li>
+              <li><a href="./index.html#skills">Skills</a></li>
+              <li><a href="gallery.html" target="_blank">Gallery </a></li>
+
+              <li><a href="./index.html#footerlinks">Contact Me</a></li>
+
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="topnavfunction()"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="hero_banner"><h2>Welcome to my portfolio</h2></div>
+    </header>
+
+    <main>
+      <section id="gallery">
+        <h2>Gallery</h2>
+
+        <div class="container">
+          <div class="gallery-group">
+            <div class="grid-item-1 grid-div">
+              <img class="grid-item" src="/images/gallery_1.png" alt="Avatar" />
+            </div>
+            <div class="grid-item-2 grid-div">
+              <img class="grid-item" src="/images/gallery_2.png" alt="Avatar" />
+            </div>
+
+            <div class="grid-item-3 grid-div">
+              <img class="grid-item" src="/images/gallery_3.png" alt="Avatar" />
+            </div>
+            <div class="grid-item-4 grid-div">
+              <img class="grid-item" src="/images/gallery_4.png" alt="Avatar" />
+            </div>
+            <div class="grid-item-5 grid-div">
+              <img class="grid-item" src="/images/gallery_5.png" alt="Avatar" />
+            </div>
+            <div class="grid-item-6 grid-div">
+              <img class="grid-item" src="/images/gallery_6.png" alt="Avatar" />
+            </div>
+            <div class="grid-item-7 grid-div">
+              <img class="grid-item" src="/images/gallery_7.png" alt="Avatar" />
+            </div>
+
+            <div class="grid-item-8 grid-div">
+              <img class="grid-item" src="/images/gallery_8.png" alt="Avatar" />
+            </div>
+
+            <div class="grid-item-9 grid-div">
+              <img class="grid-item" src="/images/gallery_9.png" alt="Avatar" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footerlinks">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me </a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#gallery"> Gallery</a></li>
+        </ul>
+      </div>
+      <form>
+        <h3>Contact Me</h3>
+        <div class="footerform">
+          <label for="firstname">First name</label>
+          <input type="text" name="firstname" id="firstname" />
+        </div>
+        <div class="footerform">
+          <label for="lastname">Last name</label>
+          <input type="text" name="lastname" id="lastname" />
+        </div>
+        <div class="footerform">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="footerform">
+          <label for="tel">Phone number</label>
+          <input type="text" name="tel" id="tel" />
+        </div>
+        <button type="submit" name="button">Send message</button>
+      </form>
+    </footer>
+    <button
+      type="button"
+      onclick="backtotopFunction()"
+      id="topBtn"
+      title="Go to top"
+    >
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <a>Copyright @ Sravanthi's Website 2021</a>
+    <script src="script.js"></script>
+  </body>
+</html>
