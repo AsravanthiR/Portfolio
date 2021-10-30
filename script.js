@@ -1,4 +1,6 @@
-
+let buttonMobile = document.getElementById("Burger");
+let nav = document.querySelector("nav");
+let links = document.querySelectorAll("nav ul li a");
   //this makes it visible and not visible on scroll
   window.onscroll = function() {
     scrollFunction()
@@ -17,12 +19,20 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-
-  function topnavfunction() {
-    var x = document.getElementById("mobTopNav");
-    if (x.className == "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
+  const mobMenu = () => {
+    for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", mobMenu);
     }
-  }
+    if (nav.classList.contains("responsive")) {
+      nav.classList.remove("responsive");
+      document.body.style.overflow = "";
+    } else {
+      nav.classList.add("responsive");
+      document.body.style.overflow = "hidden";
+    }
+  };
+  
+  
+  buttonMobile.addEventListener("click", mobMenu);
+
+
