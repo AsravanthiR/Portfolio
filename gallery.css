@@ -13,11 +13,8 @@ body {
   background: rgb(19, 136, 200);
   background: linear-gradient(
     90deg,
-    rgba(19, 136, 200, 1) 2%,
     rgb(164, 162, 194) 6%,
-    rgba(42, 42, 133, 1) 13%,
-    rgba(0, 212, 255, 0.07466736694677867) 45%,
-    rgba(1, 190, 241, 1) 59%
+    rgba(0, 212, 255, 0.07466736694677867) 45%
   );
   font-family: "Roboto", sans-serif;
 }
@@ -50,7 +47,8 @@ p {
 }
 /*------------------------Header----------------------*/
 header {
-  background: url("/images/hero_banner.png") no-repeat fixed center center/cover;
+  background: url("./images/hero_banner.png") no-repeat fixed center
+    center/cover;
 }
 .logo img {
   width: 150px;
@@ -112,12 +110,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(https://source.unsplash.com/zxcBR3zNc7I/2000x1500) no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .hero_banner h2 {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 300;
-  background-image: linear-gradient(45deg, #1421d1, #473857, #2118a3, #bb1010);
+  background-image: linear-gradient(45deg, #565877, #473857, #2118a3, #bb1010);
   background-size: 200%;
   background-repeat: repeat;
   background-clip: text;
@@ -297,6 +301,7 @@ footer label {
 footer input {
   display: block;
   margin: 10px;
+  width: 100%;
 }
 
 button {
@@ -309,6 +314,7 @@ button {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+  margin-left: 55%;
 }
 
 button:hover {
@@ -402,11 +408,18 @@ button:hover {
     right: 1rem;
     font-size: inherit;
   }
-
   footer button {
+    background-color: orange;
+    border: none;
     border-radius: 5px;
-    padding: 0.5rem;
-    z-index: 4;
+    padding: 10px;
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    margin-left: 55%;
   }
 
   .material-icons {
